@@ -1,4 +1,4 @@
-# Machine Problem Chess: Thinking Moves Ahead
+![image](https://github.com/alehuuh/chess-thinking-moves-ahead/assets/90169528/fc8381de-ea3f-44ce-97fa-76fd8bfe0ed9)# Machine Problem Chess: Thinking Moves Ahead
 
 * The program determines the number of moves it will take for the different chess pieces from their current position to any other tile in the board.
 * The number in the output grid is the minimum number of moves it will take for the chess piece to reach each tile when there are occlusions in the board.
@@ -33,5 +33,37 @@
   The piece will initially be a pawn. However it can be promoted to ANY of the chess pieces (rook, bishop, knight, apprentice, and queen).
 * The output will be the number of moves for the pawn to reach the desired end square.
 
+Example:
+INPUT 1:
+8, 8, 3, 3, bishop
+3
+4, 2
+2, 5
+6, 4
+
+* Visualization of board with blocking pieces
+Source: https://lichess.org/editor/8/8/2P5/6P1/3B4/4P3/8/8_w_-_-_0_1
+![](sp2_output.png)
+
+* Visualization of solution with blocking pieces. The values are
+the number of moves the bishop needs to reach each square in the
+board. Unreachable squares have a value of -1. The starting position
+has a value of 0
+![](sp2_output.png)
+
+* Actual output considering blocking pieces. Print left to right going up.
+![](sp2_output.png)
+
+INPUT 2:
+8, 8, 0, 4, 1, 6, pawn
+1
+1, 7
+
+* Visualization of board and calculation. Move 3 steps up. Promote to a bishop and move diagonally.
+Source: https://lichess.org/editor/8/8/8/8/7p/8/8/6n1_w_-_-_0_1
+![](sp2_output.png)
+
+* OUTPUT: 4
+3 + 1 = 4
 
 
