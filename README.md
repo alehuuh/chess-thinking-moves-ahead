@@ -1,4 +1,4 @@
-![image](https://github.com/alehuuh/chess-thinking-moves-ahead/assets/90169528/fc8381de-ea3f-44ce-97fa-76fd8bfe0ed9)# Machine Problem Chess: Thinking Moves Ahead
+# Machine Problem Chess: Thinking Moves Ahead
 
 * The program determines the number of moves it will take for the different chess pieces from their current position to any other tile in the board.
 * The number in the output grid is the minimum number of moves it will take for the chess piece to reach each tile when there are occlusions in the board.
