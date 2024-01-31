@@ -17,7 +17,7 @@
   piece - name of the piece. Use the following names. [pawn, rook, knight, bishop, queen, king]
 * The output will be printed in this order: ((0,0)->(no. of columns,0)->(0,1)->(no. of columns,no. of rows) or the value of the output grid printed left to right going up as shown below.
 
-![](direction.png)
+![](direction.PNG)
 
 * OR in this format
     s1, s2, x1, y1, x2, y2, pawn
@@ -64,6 +64,6 @@ Source: https://lichess.org/editor/8/8/8/8/7p/8/8/6n1_w_-_-_0_1
 ![](sample5.png)
 
 * OUTPUT: 4
-3 + 1 = 4
+* 3 + 1 = 4
 
 
