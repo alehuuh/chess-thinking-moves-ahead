@@ -33,7 +33,7 @@
   The piece will initially be a pawn. However it can be promoted to ANY of the chess pieces (rook, bishop, knight, apprentice, and queen).
 * The output will be the number of moves for the pawn to reach the desired end square.
 
-Example:
+## Example:
 INPUT 1:
 8, 8, 3, 3, bishop
 3
