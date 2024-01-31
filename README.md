@@ -6,62 +6,57 @@
 
 ## Program Mode
 * The user will be asked to input which can be in this format:
-    s1, s2, x1, y1, piece
-    n
-    n_i_1, n_i_2
-    ...
-* Wherein s1, s2 - horizontal size and vertical size of the board respectively.
-  x1, y1 - starting position of the piece. 
-  n - number of blocking pieces
-  n_i_1, n_i_2 - coordinates of the ith blocking piece. There should be n of these
-  piece - name of the piece. Use the following names. [pawn, rook, knight, bishop, queen, king]
+    * s1, s2, x1, y1, piece
+    * n
+    * n_i_1, n_i_2
+    * ...
+      * Wherein s1, s2 - horizontal size and vertical size of the board respectively.
+      * x1, y1 - starting position of the piece. 
+      * n - number of blocking pieces
+      * n_i_1, n_i_2 - coordinates of the ith blocking piece. There should be n of these
+      * piece - name of the piece. Use the following names. [pawn, rook, knight, bishop, queen, king]
 * The output will be printed in this order: ((0,0)->(no. of columns,0)->(0,1)->(no. of columns,no. of rows) or the value of the output grid printed left to right going up as shown below.
 
 ![](direction.PNG)
 
 * OR in this format
-    s1, s2, x1, y1, x2, y2, pawn
-    n
-    n_1_1, n_1_2
-    n_2_1, n_2_2
-    …
-* Wherein s1, s2 - horizontal size and vertical size of the board respectively.
-  x1, y1 - starting position of the piece. 
-  x2, y2 - desired ending position of the piece. May or may not be reachable. 
-  n - number of blocking pieces
-  n_i_1, n_i_2 - coordinates of the ith blocking piece. There should be n of these
-  The piece will initially be a pawn. However it can be promoted to ANY of the chess pieces (rook, bishop, knight, apprentice, and queen).
+    * s1, s2, x1, y1, x2, y2, pawn
+    * n
+    * n_1_1, n_1_2
+    * n_2_1, n_2_2
+    * …
+      * Wherein s1, s2 - horizontal size and vertical size of the board respectively.
+      * x1, y1 - starting position of the piece. 
+      * x2, y2 - desired ending position of the piece. May or may not be reachable. 
+      * n - number of blocking pieces
+      * n_i_1, n_i_2 - coordinates of the ith blocking piece. There should be n of these
+      * The piece will initially be a pawn. However it can be promoted to ANY of the chess pieces (rook, bishop, knight, apprentice, and queen).
 * The output will be the number of moves for the pawn to reach the desired end square.
 
 ## Example:
-INPUT 1:
-8, 8, 3, 3, bishop
-3
-4, 2
-2, 5
-6, 4
+# INPUT 1:
+* 8, 8, 3, 3, bishop
+* 3
+* 4, 2
+* 2, 5
+* 6, 4
 
-* Visualization of board with blocking pieces
-Source: https://lichess.org/editor/8/8/2P5/6P1/3B4/4P3/8/8_w_-_-_0_1
-![](sample4.png)
+Visualization of board with blocking pieces Source: https://lichess.org/editor/8/8/2P5/6P1/3B4/4P3/8/8_w_-_-_0_1
+![](sample4.PNG)
 
-* Visualization of solution with blocking pieces. The values are
-the number of moves the bishop needs to reach each square in the
-board. Unreachable squares have a value of -1. The starting position
-has a value of 0
-![](sample4.1.png)
+Visualization of solution with blocking pieces. The values are the number of moves the bishop needs to reach each square in the board. Unreachable squares have a value of -1. The starting position has a value of 0
+![](sample4.1.PNG)
 
-* Actual output considering blocking pieces. Print left to right going up.
-![](sample4.2.png)
+Actual output considering blocking pieces. Print left to right going up.
+![](sample4.2.PNG)
 
-INPUT 2:
-8, 8, 0, 4, 1, 6, pawn
-1
-1, 7
+# INPUT 2:
+* 8, 8, 0, 4, 1, 6, pawn
+* 1
+* 1, 7
 
-* Visualization of board and calculation. Move 3 steps up. Promote to a bishop and move diagonally.
-Source: https://lichess.org/editor/8/8/8/8/7p/8/8/6n1_w_-_-_0_1
-![](sample5.png)
+Visualization of board and calculation. Move 3 steps up. Promote to a bishop and move diagonally. Source:https://lichess.org/editor/8/8/8/8/7p/8/8/6n1_w_-_-_0_1
+![](sample5.PNG)
 
 * OUTPUT: 4
 * 3 + 1 = 4
